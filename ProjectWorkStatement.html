@@ -128,64 +128,17 @@ $(document).ready(function () {
 <div id="vorteq---overview" class="section level2">
 <h2>VorTeq - Overview</h2>
 <p>VorTeq is a proprietary missile developed by Energy Recovery Inc to enhance the reliability and efficiency of fracking oil &amp; gas wells. To the layman, fracking is a process by which oil &amp; gas wells are stimulated to enhance production of hydrocarbons. The fracking process involves a missile injecting high pressure water (mixed with proppant and chemicals) into the oil well to stimulate the formation and keep it open for hydrocarbons to escape to the wellhead.</p>
-<p>The VorTeq missile is designed to transfer pressure energy from a high pressure (HP) clean motive fluid (usually water) to a process fluid (fracking fluid) and inject it into the well bore. The key components of the missile that perform this pressure exchange are the 12 (or more) rotary pressure exchangers (RPX), each of which is driven by its own VFD (variable frequency drive) controlled induction motor. The high pressure clean motive fluid is supplied by multiple positive displacement pumps supplied by the operator. The key failure mode for the VorTeq system is erosion of the RPXs, driven by motive/process flow imbalance. The RPXs carry highly abrasive fluids at very high pressures (up to 15000 psi) and high flow velocities. If the process flow rate, motive flow rate and RPM are not maintained within allowable limits, erosion will occur, resulting in increased motor torque (loss of efficiency) and eventual failure of the RPX. Due to the widely varying conditions at each well site (pressure requirement, flow requirement and fracking fluid composition can vary widely), the VorTeq system has to be robust and operate reliably at many different operating conditions. The number of RPXs operating (at any given time) may range from 6 to 12 (or more), the location of the operating RPXs on the missile may vary, the number of HP pumps deployed by the operator may vary (from 8 to 12) and the location where the motive fluid is supplied to the missile manifolds may vary as well (depending on the layout at the well site). Even if a global flow balance is maintained (between the motive and process fluids) at the missile level, optimal conditions cannot be guaranteed at the individual RPX level due to inherent variation from RPX to RPX, pressure losses in the missile flow network etc. Measuring individual flows through each RPX is not feasible due to the nature of the working fluids and the high pressures at which the system is operating.</p>
+<p>The VorTeq missile is designed to transfer pressure energy from a high pressure (HP) clean motive fluid (usually water) to a process fluid (fracking fluid) and inject it into the well bore. The key components of the missile that perform this pressure exchange are the 12 (or more) rotary pressure exchangers (RPX), each of which is driven by its own VFD (variable frequency drive) controlled induction motor. The high pressure clean motive fluid is supplied by multiple positive displacement pumps provided by the operator. The key failure mode for the VorTeq system is erosion of the RPXs, driven by motive/process flow imbalance. The RPXs carry highly abrasive fluids at very high pressures (up to 15000 psi) and high flow velocities. If the process flow rate, motive flow rate and RPM are not maintained within allowable limits, erosion will occur, resulting in increased motor torque (loss of efficiency) and eventual failure of the RPX. Due to the widely varying conditions at each well site (pressure requirement, flow requirement and fracking fluid composition can vary widely), the VorTeq system has to be robust and operate reliably at many different operating conditions. The number of RPXs operating (at any given time) may range from 6 to 12 (or more), the location of the operating RPXs on the missile may vary, the number of HP pumps deployed by the operator may vary (from 8 to 12) and the location where the motive fluid is supplied to the missile manifolds may vary as well (depending on the layout at the well site). Even if a global flow balance is maintained (between the motive and process fluids) at the missile level, optimal conditions cannot be guaranteed at the individual RPX level due to inherent variation from RPX to RPX, pressure losses in the missile flow network etc. Measuring individual flows through each RPX is not feasible due to the nature of the working fluids and the high pressures at which the system is operating.</p>
 </div>
 <div id="objectives" class="section level2">
 <h2>Objectives</h2>
 <p>The key objective of the project is to enhance the robustness of the missile design, so it can be guaranteed to operate reliably for a minimum of xxxx hrs. Prior to optimizing the missile design, it is essential to understand the level of flow imbalance possible (from RPX to RPX) over the range of operating conditions. Once it is determined, design tweaks to the missile can be deployed to ensure the flow imbalance is kept within acceptable limits at all possible operating conditions.</p>
-<p>To characterize the system flow imbalance, a set of experiments were performed recently on the VorTeq missile and large amounts of data was collected for many different operating conditions. The data must be organized and processed (using standard fluid dynamics principles) to determine the following</p>
-<ol style="list-style-type: decimal">
-<li>Inherent variation in process flow coefficient from RPX to RPX</li>
-</ol>
-<ul>
-<li>Process flow coefficient for RPX1 to RPX12</li>
-<li>Which RPX has the highest &amp; lowest process flow coefficients</li>
-<li>Max possible variation in process flow (as % of mean flow)</li>
-</ul>
-<ol start="2" style="list-style-type: decimal">
-<li>Inherent variation in motive flow coefficient from RPX to RPX</li>
-</ol>
-<ul>
-<li>Motive flow coefficient for RPX1 to RPX12</li>
-<li>Which RPX has the highest &amp; lowest motive flow coefficients</li>
-<li>Max possible variation in motive flow (as % of mean flow)</li>
-</ul>
-<ol start="3" style="list-style-type: decimal">
-<li>Variation in process flow from RPX to RPX at various operating conditions</li>
-</ol>
-<ul>
-<li>Make use of process flow coefficients calculated to determine process flows through all RPXs at different operating conditions</li>
-<li>Which RPX has the highest &amp; lowest process flows at each operating condition</li>
-<li>Variation in process flow across the RPXs’ (as % of mean flow)</li>
-</ul>
-<ol start="4" style="list-style-type: decimal">
-<li>Variation in motive flow from RPX to RPX at various operating conditions</li>
-</ol>
-<ul>
-<li>Make use of motive flow coefficients calculated to determine motive flows through all RPXs at different operating conditions</li>
-<li>Which RPX has the highest &amp; lowest motive flows at each operating condition</li>
-<li>Variation in motive flow across the RPXs’ (as % of mean flow)</li>
-</ul>
-<ol start="5" style="list-style-type: decimal">
-<li>Combine the process &amp; motive flow data to determine lead flow variation</li>
-</ol>
-<ul>
-<li>Which RPX has the highest &amp; lowest lead flows at each operating condition</li>
-<li>Variation in lead flow across the RPXs’ (as % of global lead flow)</li>
-</ul>
-<ol start="6" style="list-style-type: decimal">
-<li>Determine potential for erosion</li>
-</ol>
-<ul>
-<li>Combine above data with RPX control schemes to determine motive &amp; process flow travel distance variation</li>
-<li>Couple with an erosion model to put together a map of erosion potential of each RPX at each operating condition</li>
-</ul>
-<p>The above results will be used to determine “fixes” (physics based) to reduce/eliminate “erosion potential” at all operating conditions (out of scope for the data science project). Validation testing will be performed to verify.</p>
+<p>To characterize the system flow imbalance, a set of experiments were performed recently on the VorTeq missile and large amounts of data was collected for many different operating conditions. The data sets were processed and a single parameter <em>Erosion Potential</em> was determined, which loosely represents the % lkelihood of erosion at a given operating condition. This is the response function that our model must predict accurately.</p>
 <p>Even if the missile is perfectly flow balanced to start with, due to degradation caused in operation, flow imbalance will creep in, thereby raising “erosion potential”. Hence a “stretch” goal for the project is to come up with a predictive tool, which when deployed alerts the operator of an impending failure of a RPX. In addition, the tool must produce the alert sufficiently in advance, so the operator can safely ramp down the RPX or alter its operating conditions (lead flow, RPM, flow rate etc.), so the prediction of impending failure is eliminated.</p>
 </div>
 <div id="benefits" class="section level2">
 <h2>Benefits</h2>
-<p>Operating the missile at its best efficiency will reduce operating cost - run time and power consumed. However, the biggest benefits of enhancing reliability is the increase in MTBF (mean time between failures), increase in inspection/maintenance interval, reduction in warranty costs and most of all increased satisfaction from the customer. The product is new and is still in the process of commercialization, so the numbers are yet to be determined. However, the cost of refurbishing a missile due to catastrophic failure can run into several 100,000 dollars.</p>
+<p>Operating the missile at its best efficiency will reduce operating cost - run time and power consumed. However, the biggest benefits of enhancing reliability is the increase in MTBF (mean time between failures), increase in inspection/maintenance interval, reduction in warranty costs and most of all increased satisfaction from the customer. The product is new and is still in the process of commercialization, so the numbers are yet to be determined. However, the cost of refurbishing a missile due to catastrophic failure can run into several hundreds of thousands of dollars.</p>
 <p>As part of the new initiative on predictive analytics, the project will provide experience to ERI on how to use data science tools to enhance their products.</p>
 </div>
 <div id="roles-relationships" class="section level2">
@@ -199,23 +152,18 @@ $(document).ready(function () {
 </div>
 <div id="definition-of-success" class="section level2">
 <h2>Definition of Success</h2>
-<p>The project is deemed successful, if the data shows that there is “negligible” potential for erosion at all possible operating conditions. More likely, the data will show that there is significant potential for erosion on multiple RPXs and at a range of operating conditions. In that case, the data should give enough information to enable the deployment of “fixes” to the missile that would reduce the flow imbalance to a level that would significantly reduce/eliminate the potential for erosion at most likely (or all) operating conditions.</p>
-<p>The success metric for the project is the “erosion potential” which can be roughly defined as follows</p>
-<p><span class="math inline">\(EP = 1 - n * Lead Flow * Process Flow Travel Distance/RPM\)</span></p>
-<p>A map of erosion potential will be developed for each RPX at various operating conditions based on data collected. Validation testing will be performed to verify the reduction in erosion potential. An erosion potential of 0.05 or less for all RPXs at most likely operating conditions will be deemed a success.</p>
+<p>The project is deemed successful, if the model developed can predict the <em>Erosion Potential</em> accurately at all operating conditions. More precisely, the predicted <em>Erosion Potential</em> must be within <strong>0.05</strong> of the actual value.</p>
+<p>The entire data set available will be randomized and split into three portions - training data, validation data and test data. The training data will be used to develop several different models to predict <em>Erosion Potential</em>. The accuracy of the model can be estimated using many different parameters depending on the type of model. However, to maintain consistency across models, mean absolute deviation of the predicted and measured values will be used as the metric to compare models. The validation data will be used for fine tuning the models and to fix the model parameters. The test data will be used to finally determine if the model is successful.</p>
+<p>If the mean absolute deviation of the predicted <em>Erosion Potential</em> is within <strong>0.05</strong> of the actual value, the model is deemed to have achieved the success metric.</p>
 </div>
 <div id="risks" class="section level2">
 <h2>Risks</h2>
-<p>It is possible that there is not adequate data or too much scatter to accurately map the erosion potential at various operating conditions. Additional data will need to be collected in that case and the project should be able to guide the quantity and accuracy of data needed</p>
+<p>It is possible that there is not adequate data or too much uncertainty in the data collected to accurately map the erosion potential at various operating conditions. Additional data will need to be collected in that case and the project should be able to guide the quantity and accuracy of data needed.</p>
 <p>If the model predicts that it is not possible to meet the success metric, a partial success may be achieved by getting as close to the metric as possible. Management may decide to redesign the missile completely if the achieved metric is deemed inadequate.</p>
 </div>
 <div id="timeline" class="section level2">
 <h2>Timeline</h2>
-<table style="width:39%;">
-<colgroup>
-<col width="19%"></col>
-<col width="19%"></col>
-</colgroup>
+<table>
 <thead>
 <tr class="header">
 <th>Task</th>
@@ -228,19 +176,11 @@ $(document).ready(function () {
 <td>4/24/18</td>
 </tr>
 <tr class="even">
-<td>Characterize Inherent Variation in RPX Flow Coefficients</td>
-<td>5/1/2018</td>
-</tr>
-<tr class="odd">
-<td>Determine Missile Flow Imbalance / Lead Flow Imbalance (Performance Metric)</td>
+<td>Develop preliminary models &amp; evaluate their performance</td>
 <td>5/8/2018</td>
 </tr>
-<tr class="even">
-<td>Map of Erosion Potential (Performance Metric)</td>
-<td>5/15/2018</td>
-</tr>
 <tr class="odd">
-<td>Develop Insights(fixes) to Enhance Performance Metric &amp; Predict Benefit</td>
+<td>Model selection, fine tuning and validation</td>
 <td>5/15/2018</td>
 </tr>
 <tr class="even">
@@ -256,7 +196,8 @@ $(document).ready(function () {
 </div>
 <div id="modelsolution-deployment" class="section level2">
 <h2>Model/Solution Deployment</h2>
-<p>How much time it will take to deploy the solutions. Identify who the users of the model are and how the model will used Discuss what changes have to happen within the organization to deploy the model Discuss risks to model deployment, (e.g. push-back by employees )</p>
+<p>The missile operators at ERI and/or its customers must be trained to use the model. The user interface must be straight forward and intuitive and the training comprehensive to help ease of deployment. Also, the robustness of the model and accuracy of its predictions will eventually gain the confidence and trust of the users.</p>
+<p>The model performance will be tracked continuously and more data will be collected over time. Periodically, the model will be tweaked by running the training and validation phases over the new and old data to improve prediction accuracy.</p>
 </div>
 
 
