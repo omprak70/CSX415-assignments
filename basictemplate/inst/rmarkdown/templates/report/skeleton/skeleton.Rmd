@@ -1,0 +1,52 @@
+---
+title: "Formal Problem Statement"
+author: "Omprakash Samudrala"
+date: "May 8, 2018"
+output: html_document
+---
+
+## Project Statement
+
+One or two line statement on the high level goal of the project.
+
+## Project Overview 
+
+Brief description of the project background.
+
+## Project Goals & COnstraints
+
+* List of objectives of the project.
+* What is the scope of the project? 
+* What constraints are on the project?
+* What is the final deliverable?
+* What are the model deployment expectations?
+
+## Benefits
+
+* Clearly articulate why the project is being considered.
+* Identify any non-quantifiable benefits associated with project
+
+## Roles & Relationships
+
+Identify key roles: management, owners, stakeholders, users, SMEs, etc.
+
+## Definition of Success
+
+* Define a success metric for the project, a single quantifiable, unambiguous metric, that will be used to determine if your project is a success. This is not just a technical metrics, but one use at the managerial level. This of this is how "the needle must move" by your solution
+* Define (very precisely) the performance/power of the model or analysis that is necessary to achieve that success to achieve the success
+
+## Project Risks
+
+* What if the success metric is not met?
+* What if the model performance metric is not met?
+
+## Project Timeline
+
+* When you will have preliminary results of model/analysis performance?
+* When you need or expect to have determined whether the model performance?
+* How much time it will take to deploy the solutions?
+
+## Model/Solution Deployment
+
+* What changes have to happen within the organization to deploy the model?
+* Risks to model deployment, (e.g. push-back by employees )
